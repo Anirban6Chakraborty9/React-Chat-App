@@ -1,0 +1,83 @@
+.addUser{
+    height: max-content;
+    width: max-content;
+    padding: 20px;
+    background-color: rgba(116, 114, 114, 0.566);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    backdrop-filter: blur(5px);
+
+    form{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+        input{
+            width: 100%;
+            padding: 10px;
+            color: rgb(179, 181, 184);
+            background-color: rgb(33,31,41);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        button{
+            padding: 10px;
+            color: rgb(201, 204, 207);
+            background-color: rgb(19, 117, 32);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+
+            &:hover{
+                background-color: rgb(21, 135, 36);
+
+            }
+        }
+    }
+
+    .user{
+        display: flex;
+        align-items:center ;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 16px;
+
+        .details{
+            display: flex;
+            align-items:center ;
+            gap: 10px;
+            cursor: pointer;
+
+            img{
+                width: 45px;
+                height: 45px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        button{
+            padding: 6px;
+            color: rgb(201, 204, 207);
+            font-size: 12px;
+            background-color: rgba(92, 37, 72, 0.763);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+
+            &:hover{
+                background-color: rgba(61, 20, 46, 0.763);
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.list{
+    flex:0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(144, 141, 141, 0.594);
+    background-color: rgba(18, 8, 33, 0.457);
+}
+

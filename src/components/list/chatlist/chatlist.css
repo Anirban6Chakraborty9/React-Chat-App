@@ -1,0 +1,42 @@
+.chatlist{
+    flex: 1;
+    overflow: scroll;
+
+    .item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        border-bottom: 1px solid rgba(144, 141, 141, 0.584);
+        cursor: pointer;
+
+        img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap:6px;
+
+            span{
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .item:hover{
+        background-color: rgba(56, 69, 96, 0.47);
+    }
+}
+
+.chatlist::-webkit-scrollbar {
+    display: none; 
+   } 

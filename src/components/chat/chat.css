@@ -1,0 +1,203 @@
+.chat{
+    flex:1.8;
+    /* border-left: 1px solid rgba(144, 141, 141, 0.594);
+    border-right: 1px solid rgba(144, 141, 141, 0.594); */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        background-color:rgba(35, 22, 56, 0.457);
+        border-bottom: 1px solid rgba(144, 141, 141, 0.594);
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            img{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+            .texts{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+    
+                span{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+        
+                p{
+                    font-size: 11px;
+                    font-weight: 300;
+                    color: #a5a5a5;
+                }
+            }
+        }
+
+        .icons{
+
+            display: flex;
+            gap: 25px;
+
+            img{
+                width: 23px;
+                height: 23px;
+                border-radius: 50%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .mid{
+        padding: 20px;
+        flex: 1;
+        border-bottom: 1px solid rgba(144, 141, 141, 0.594);
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        gap: 20px;
+
+        .message{
+            gap: 10px;
+            max-width: 70%;
+            width: fit-content;
+            color: whitesmoke;
+
+            &.own{
+                align-self: flex-end;
+
+                .texts{
+
+                    p{
+                /* background-color:rgba(41, 88, 62, 0.603); */
+                        background-color:rgba(26, 89, 198, 0.533);
+                        padding: 12px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .texts{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                img{
+                    height: 250px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                p{
+                    /* background-color:rgba(99, 92, 92, 0.361); */
+                    background-color:rgba(20, 27, 23, 0.63);
+                    padding: 12px;
+                    border-radius: 10px;
+                    font-size: 14px;
+                }
+
+                span{
+                    font-size: 10px;
+                    display: flex;
+                    justify-content:end;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+
+    .mid::-webkit-scrollbar {
+        display: none; 
+       } 
+
+    .bottom{
+        display: flex;
+        padding: 12px 15px;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto 0;
+        background-color:rgba(35, 22, 56, 0.457);
+
+        .emoji{
+            img{
+                width: 23px;
+                height: 23px;
+                cursor: pointer; 
+            }
+        }
+
+        .icons{
+            display: flex;
+            gap: 15px;
+
+            img{
+                width: 23px;
+                height: 23px;
+                cursor: pointer; 
+            }
+        }
+
+        input{
+            flex: 1;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background-color: rgba(31, 11, 20, 0.47);
+            color: white;
+            font-size: 14.5px;
+
+            &:disabled{
+                cursor: not-allowed;
+            }
+        }
+
+        input:hover{
+            background-color: rgba(41, 19, 27, 0.47);
+        }
+
+        
+
+        .emoji{
+            position: relative;
+
+            .picker{
+                position: absolute;
+                bottom: 50px;
+                left: 0;
+            }
+        }
+
+        .sendButton{
+            background-color: rgb(76, 76, 225);
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+
+            &:disabled{
+                background-color: rgba(108, 108, 203, 0.642);
+                cursor: not-allowed;
+            }
+        }
+
+        
+    }
+}
